@@ -7,11 +7,12 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = {"stepDefinitions", "hooks"},
+        glue = {"stepDefinitions", "Hooks"},
         plugin = {
             "pretty",
             "html:reports/cucumber.html",
-            "json:reports/cucumber.json"
+            "json:reports/cucumber.json",
+            "\"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:\""
         },
         monochrome = true,
         publish = true

@@ -4,6 +4,7 @@ import base.baseClass;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import utils.ScreenshotUtil;
 
 public class hooks {
 /**
